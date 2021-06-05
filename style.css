@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: white;
+  background-color: #222;
+  /* background-color: #60b347; */
+}
+
+/* LAYOUT */
+header {
+  position: relative;
+  height: 30vh;
+  border: 7px solid white;
+}
+
+main {
+  height: 65vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dealerUnknownHand {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  transform: translate(-50%, 50%);
+}
+
+.dealerKnownHand {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+  transform: translate(-50%, 50%);
+}
+
+.dealerMessage {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 3rem 0rem;
+
+  position: absolute;
+  margin-top: 30rem;
+  left: 61%;
+}
+
+.playerHand {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  bottom: 0;
+}
+
+.between {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.begin {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.again {
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+}
+
+.rules {
+  position: absolute;
+  top: 18rem;
+  left: 2rem;
+}
+
+.modal {
+  position: absolute;
+  width: 50rem;
+  height: 45rem;
+  background-color: black;
+  left: 47rem;
+  top: 1rem;
+  transform: translate(50%, 50%);
+  border: 1px solid white;
+  padding-left: 1rem;
+  padding-top: 3rem;
+
+  z-index: 10;
+}
+
+.close-modal {
+  font-family: "Press Start 2P";
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+
+  left: 45rem;
+  top: 0.5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
+/* .guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+} */
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
+.stand {
+  margin-left: 1em;
+}
+
+.hit {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.playerMessage {
+  margin-top: 2rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}

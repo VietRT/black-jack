@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BlackJack!</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>
+        BlackJack! <br />
+        Dealer's Hand
+      </h1>
+      <button class="btn begin">Begin!</button>
+      <button class="btn again">Again!</button>
+      <button class="btn rules">Rules!</button>
+      <div class="dealerUnknownHand">?</div>
+      <div class="dealerKnownHand">?</div>
+      <p class="dealerMessage">dealer says...</p>
+    </header>
+    <main>  
+      <div class="modal hidden">
+        <button class="close-modal">close</button>
+        <h2>Blackjack Rules: <br><br>
+            If player or dealer obtains blackjack on first turn then it is their win unless both obtain blackjack which will be neutral (no chips are taken or given). <br><br>
+            Player can choose to hit or stand: <br> <br>
+            Hit means to be dealt a card, if hit 21 sum then you instant win, otherwise over 21 means you bust and lost
+            Stand means to have the dealer proceed, in which if his sum is 16 under, he must hit. If 17 over then he stands and then values between the two hands are compared <br><br> Whoever has higher hand at this point wins the game, if tied then house wins. <br><br>
+            These are not the only or full rules, this is meant to be a simulation or test project.</h2>    
+      </div>
+
+      <section class="left">
+        <div class="playerHand">?</div>
+        <span
+          ><button class="btn hit">Hit</button
+          ><button class="btn stand">Stand</button></span
+        >
+        <p><h3 class="playerMessage">you drew....</h3></p>
+      </section>
+      <section class="right">
+        <p class="message">Click begin to start the card dealing</p>
+        <!-- <p class="label-score">💯 Score: <span class="score">0</span></p>
+        <p class="label-highscore">
+          🥇 Highscore: <span class="highscore">0</span>
+        </p> -->
+      </section>     
+    </main>
+    
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
